@@ -36,7 +36,7 @@ To intuitively depict the trend of paradigm shift in NLP, we also draw an intera
 
 ## Contributing
 
-This line of research is difficult to be comprehensively surveyed, so welcome any additions, modifications, and suggestions! Please feel free to submit pull request or directly contact me (txsun19@fudan.edu.cn).
+This line of research is difficult to be comprehensively surveyed, so welcome any additions, modifications, and suggestions! Please feel free to submit pull request or directly contact [me](https://txsun1997.github.io/).
 
 ## Citation
 
