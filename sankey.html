@@ -185,8 +185,11 @@ var nodeColors = {
 var sankey_chart = anychart.sankey(data);
 
 sankey_chart.node().normal().stroke("#455a64", 2);
-sankey_chart.node().fill(function() {
+sankey_chart.node().normal().fill(function() {
 	return nodeColors[this.name] || this.sourceColor;
+});
+sankey_chart.node().hovered().fill(function() {
+	return anychart.color.darken(nodeColors[this.name]) || this.sourceColor;
 });
 
 //customizing the visual appearance of flows

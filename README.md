@@ -1,6 +1,6 @@
 # Paradigm Shift in NLP
 
-Welcome to the webpage for "[Paradigm Shift in Natural Language Processing](https://txsun1997.github.io/papers/paradigm_shift.pdf)". Some resources of the paper are constantly maintained here, such as a full list of papers of paradigm shift, an interactive Sankey diagram to depict the trend of paradigm shift, etc.
+Welcome to the webpage for "[Paradigm Shift in Natural Language Processing](https://txsun1997.github.io/papers/paradigm_shift.pdf)". Some resources of the paper are constantly maintained here, such as a full list of papers of paradigm shift, an interactive [Sankey diagram](https://txsun1997.github.io/nlp-paradigm-shift/sankey.html) to depict the trend of paradigm shift, etc.
 
 What is paradigm shift?
 
@@ -32,7 +32,7 @@ We collect the papers of paradigm shift in the table below, which is an extensio
 
 ## Trends 
 
-To intuitively depict the trend of paradigm shift in NLP, we also draw an interactive [Sankey Diagram](https://txsun1997.github.io/nlp-paradigm-shift/sankey.html), which is an extension of the Figure 2 in our original paper. Also, this diagram is constantly updated as the table above changed.
+To intuitively depict the trend of paradigm shift in NLP, we also draw an interactive [Sankey diagram](https://txsun1997.github.io/nlp-paradigm-shift/sankey.html), which is an extension of the Figure 2 in our original paper. Also, this diagram is constantly updated as the table above changed.
 
 ## Contributing
 
