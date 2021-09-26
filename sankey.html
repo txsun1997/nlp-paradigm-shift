@@ -17,8 +17,8 @@
 <script>
 anychart.onDocumentReady(function(){
  //creating the data
- var data = [
- {from: 'Seq2ASeq (2012)', to: 'Seq2ASeq (2013)', value: 100},
+var data = [
+{from: 'Seq2ASeq (2012)', to: 'Seq2ASeq (2013)', value: 100},
 {from: 'Seq2Seq (2013)', to: 'Seq2Seq (2014)', value: 100},
 {from: 'Class (2012)', to: 'Class (2013)', value: 100},
 {from: 'Class (2013)', to: 'Class (2014)', value: 100},
@@ -107,10 +107,98 @@ anychart.onDocumentReady(function(){
 {from: 'Seq2ASeq (2020)', to: 'MRC (2021)', value: 20},
 {from: 'Seq2ASeq (2020)', to: 'Seq2ASeq (2021)', value: 20},
  ];
+ 
+var nodeColors = {
+'Seq2ASeq (2012)': '#37719c',
+'Seq2Seq (2013)': '#4bc053',
+'Class (2012)': '#19cdbb',
+'Class (2013)': '#19cdbb',
+'Matching (2012)': '#9a4c8c',
+'Matching (2013)': '#9a4c8c',
+'SeqLab (2012)': '#807a35',
+'SeqLab (2013)': '#807a35',
+'MRC (2012)': '#ee7e56',
+'MRC (2013)': '#ee7e56',
+'Seq2Seq (2012)': '#4bc053',
+'Seq2ASeq (2013)': '#37719c',
+'(M)LM (2012)': '#e6353c',
+'(M)LM (2013)': '#e6353c',
+'Class (2014)': '#19cdbb',
+'Matching (2014)': '#9a4c8c',
+'SeqLab (2014)': '#807a35',
+'MRC (2014)': '#ee7e56',
+'Seq2Seq (2014)': '#4bc053',
+'Seq2ASeq (2014)': '#37719c',
+'(M)LM (2014)': '#e6353c',
+'Class (2015)': '#19cdbb',
+'Matching (2015)': '#9a4c8c',
+'SeqLab (2015)': '#807a35',
+'MRC (2015)': '#ee7e56',
+'Seq2Seq (2015)': '#4bc053',
+'Seq2ASeq (2015)': '#37719c',
+'(M)LM (2015)': '#e6353c',
+'(M)LM (2016)': '#e6353c',
+'Class (2016)': '#19cdbb',
+'Matching (2016)': '#9a4c8c',
+'SeqLab (2016)': '#807a35',
+'MRC (2016)': '#ee7e56',
+'Seq2Seq (2016)': '#4bc053',
+'Seq2ASeq (2016)': '#37719c',
+'Class (2017)': '#19cdbb',
+'Matching (2017)': '#9a4c8c',
+'SeqLab (2017)': '#807a35',
+'MRC (2017)': '#ee7e56',
+'Seq2Seq (2017)': '#4bc053',
+'Seq2ASeq (2017)': '#37719c',
+'(M)LM (2017)': '#e6353c',
+'MRC (2018)': '#ee7e56',
+'SeqLab (2018)': '#807a35',
+'Class (2018)': '#19cdbb',
+'Matching (2018)': '#9a4c8c',
+'Seq2Seq (2018)': '#4bc053',
+'Seq2ASeq (2018)': '#37719c',
+'(M)LM (2018)': '#e6353c',
+'Matching (2019)': '#9a4c8c',
+'Class (2019)': '#19cdbb',
+'SeqLab (2019)': '#807a35',
+'MRC (2019)': '#ee7e56',
+'Seq2Seq (2019)': '#4bc053',
+'Seq2ASeq (2019)': '#37719c',
+'(M)LM (2019)': '#e6353c',
+'Class (2020)': '#19cdbb',
+'MRC (2020)': '#ee7e56',
+'Matching (2020)': '#9a4c8c',
+'SeqLab (2020)': '#807a35',
+'(M)LM (2020)': '#e6353c',
+'Seq2Seq (2020)': '#4bc053',
+'Seq2ASeq (2020)': '#37719c',
+'Seq2Seq (2021)': '#4bc053',
+'MRC (2021)': '#ee7e56',
+'Class (2021)': '#19cdbb',
+'Matching (2021)': '#9a4c8c',
+'SeqLab (2021)': '#807a35',
+'Seq2ASeq (2021)': '#37719c',
+'(M)LM (2021)': '#e6353c',
+}
+ 
 //calling the Sankey function
 var sankey_chart = anychart.sankey(data);
+
+sankey_chart.node().normal().stroke("#455a64", 2);
+sankey_chart.node().fill(function() {
+	return nodeColors[this.name] || this.sourceColor;
+});
+
+//customizing the visual appearance of flows
+sankey_chart.flow().normal().fill("#ffa000 0.5");
+sankey_chart.flow().hovered().fill(anychart.color.darken("#ffa000"));
+sankey_chart.flow().hovered().stroke("#455a63");
+
+sankey_chart.node().labels().enabled(true).fontColor('Black').fontSize(10);
+sankey_chart.tooltip().enabled(true);
+
 //customizing the width of the nodes
-sankey_chart.nodeWidth("40%");
+sankey_chart.nodeWidth("30%");
 //setting the chart title
 sankey_chart.title("Paradigm Shift in NLP");
 //customizing the vertical padding of the nodes
