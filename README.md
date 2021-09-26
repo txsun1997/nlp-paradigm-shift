@@ -4,7 +4,7 @@
 
 ### What is paradigm shift?
 
-![paradigm shift](D:\workdir\github\nlp-paradigm-shift\paradigm_shift.png)
+<img src="https://txsun1997.github.io/nlp-paradigm-shift/paradigm_shift.png" style="zoom:48%;" />
 
 ### Paradigm shift in NLP tasks
 
