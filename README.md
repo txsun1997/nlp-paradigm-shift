@@ -1,6 +1,6 @@
 # Paradigm Shift in NLP
 
-Welcome to the webpage for "[Paradigm Shift in Natural Language Processing](https://txsun1997.github.io/papers/paradigm_shift.pdf)". Some resources of the paper are constantly maintained here, such as a full list of papers of paradigm shift, an interactive [Sankey diagram](https://txsun1997.github.io/nlp-paradigm-shift/sankey.html) to depict the trend of paradigm shift, etc.
+Welcome to the webpage for "[Paradigm Shift in Natural Language Processing]([https://txsun1997.github.io/papers/paradigm_shift.pdf](https://link.springer.com/content/pdf/10.1007/s11633-022-1331-6.pdf))". Some resources of the paper are constantly maintained here, such as a full list of papers of paradigm shift, an interactive [Sankey diagram](https://txsun1997.github.io/nlp-paradigm-shift/sankey.html) to depict the trend of paradigm shift, etc.
 
 What is paradigm shift?
 
@@ -43,11 +43,14 @@ This line of research is difficult to be comprehensively surveyed, so welcome an
 If you find this webpage or the paper helpful to your research, please cite our paper:
 
 ```bibtex
-@article{sun2021paradigmshift,
-  title={Paradigm Shift in Natural Language Processing}, 
-  author={Tianxiang Sun and Xiangyang Liu and Xipeng Qiu and Xuanjing Huang},
-  journal={arXiv preprint arXiv:2109.12575},
-  year={2021}
+@article{Sun2022Paradigm,
+  author    = {Tianxiang Sun and Xiangyang Liu and Xipeng Qiu and Xuanjing Huang},
+  title     = {Paradigm Shift in Natural Language Processing},
+  journal   = {Machine Intelligence Research},
+  year      = {2022},
+  volume    = {19},
+  pages     = {169--183},
+  url       = {https://doi.org/10.1007/s11633-022-1331-6},
 }
 ```
 
